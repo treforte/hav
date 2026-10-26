@@ -96,6 +96,14 @@ section{padding:88px 0}
 .yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .yt-cap{font-weight:700;color:var(--navy);margin-top:12px;font-size:15px}
 
+/* SPONSOR LOGOS */
+.proof-logos{padding:56px 0 48px}
+.proof-logos h2{font-size:clamp(24px,3.2vw,34px)}
+.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 28px;align-items:center;margin-top:28px}
+.logos img{max-height:46px;width:auto;margin:0 auto;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
+.logos img:hover{filter:none;opacity:1}
+@media(min-width:720px){.logos{grid-template-columns:repeat(5,1fr)}}
+
 /* WHY */
 .why-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
 .why-copy p{font-size:17px;color:var(--gray);margin-bottom:16px}
@@ -105,14 +113,6 @@ section{padding:88px 0}
 .ben .ic{font-size:30px;margin-bottom:10px}
 .ben h3{font-size:19px;color:var(--navy);text-transform:uppercase;margin-bottom:8px;font-weight:800}
 .ben p{font-size:15px;color:var(--gray)}
-
-/* SPONSOR LOGOS */
-.proof-logos{padding:0 0 88px}
-.proof-logos h2{font-size:clamp(24px,3.2vw,34px)}
-.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 28px;align-items:center;margin-top:28px}
-.logos img{max-height:46px;width:auto;margin:0 auto;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
-.logos img:hover{filter:none;opacity:1}
-@media(min-width:720px){.logos{grid-template-columns:repeat(5,1fr)}}
 
 /* ROLES */
 .roles{background:var(--off)}
@@ -288,30 +288,6 @@ footer a{color:rgba(255,255,255,.8)}
   </div>
 </div>
 
-<!-- WHY -->
-<section>
-  <div class="wrap">
-    <div class="why-grid">
-      <div class="why-copy">
-        <span class="eyebrow">Why Volunteer</span>
-        <h2>The Best Seat at the Parade Is in It</h2>
-        <p>Spectators watch the parade. Volunteers make it happen. You'll be right there when a Korean War veteran rides past and the crowd stands up, or when a marching band from a local high school rounds the corner.</p>
-        <p><strong>No experience needed.</strong> Pick a role that fits you, show up, and our parade committee walks you through the rest. Bring a friend, your family, your coworkers, or your scout troop.</p>
-        <a class="btn btn-red" href="#roles" data-track="why_roles">Find My Role</a>
-      </div>
-      <div>
-        <div class="yt" data-id="uxeOPSdktVY" data-title="Veterans Day trailer"><img src="https://i.ytimg.com/vi/uxeOPSdktVY/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play the Veterans Day trailer"></button></div>
-        <p class="yt-cap">▶ Watch: What You'll Be Part Of</p>
-      </div>
-    </div>
-    <div class="benefits">
-      <div class="ben"><div class="ic">🇺🇸</div><h3>Honor Their Service</h3><p>Give back to the veterans who gave so much, in the most visible way Phoenix has to say thank you.</p></div>
-      <div class="ben"><div class="ic">👥</div><h3>Great for Groups</h3><p>Families, friends, coworkers, and scout units. Many roles need pairs or teams, so bring your people.</p></div>
-      <div class="ben"><div class="ic">⏱️</div><h3>One Morning</h3><p>About 9 a.m. to 2 p.m. on November 11. Or join a planning committee if you want to help all year.</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- SOCIAL PROOF: SPONSOR LOGOS -->
 <section class="proof-logos">
   <div class="wrap">
@@ -330,6 +306,30 @@ footer a{color:rgba(255,255,255,.8)}
       <img src="https://honoringamericasveterans.org/wp-content/uploads/2022/09/sponsor-the-arizona-republic.jpg" alt="The Arizona Republic" loading="lazy">
       <img src="https://honoringamericasveterans.org/wp-content/uploads/2019/01/sponsor-ktar-1.jpg" alt="KTAR" loading="lazy">
       <img src="https://honoringamericasveterans.org/wp-content/uploads/2026/08/mountain-america-credit-union-logo-300x76.png" alt="Mountain America Credit Union" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section style="padding-top:24px">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-copy">
+        <span class="eyebrow">Why Volunteer</span>
+        <h2>The Best Seat at the Parade Is in It</h2>
+        <p>Spectators watch the parade. Volunteers make it happen. You'll be right there when a Korean War veteran rides past and the crowd stands up, or when a marching band from a local high school rounds the corner.</p>
+        <p><strong>No experience needed.</strong> Pick a role that fits you, show up, and our parade committee walks you through the rest. Bring a friend, your family, your coworkers, or your scout troop.</p>
+        <a class="btn btn-red" href="#roles" data-track="why_roles">Find My Role</a>
+      </div>
+      <div>
+        <div class="yt" data-id="uxeOPSdktVY" data-title="Veterans Day trailer"><img src="https://i.ytimg.com/vi/uxeOPSdktVY/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play the Veterans Day trailer"></button></div>
+        <p class="yt-cap">▶ Watch: What You'll Be Part Of</p>
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="ben"><div class="ic">🇺🇸</div><h3>Honor Their Service</h3><p>Give back to the veterans who gave so much, in the most visible way Phoenix has to say thank you.</p></div>
+      <div class="ben"><div class="ic">👥</div><h3>Great for Groups</h3><p>Families, friends, coworkers, and scout units. Many roles need pairs or teams, so bring your people.</p></div>
+      <div class="ben"><div class="ic">⏱️</div><h3>One Morning</h3><p>About 9 a.m. to 2 p.m. on November 11. Or join a planning committee if you want to help all year.</p></div>
     </div>
   </div>
 </section>
