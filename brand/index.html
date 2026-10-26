@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate to Honor Arizona Veterans | Honoring America's Veterans</title>
+<meta name="description" content="Honoring America's Veterans is the Arizona nonprofit behind the HAV Phoenix Veterans Day Parade. Donate in 60 seconds with Zelle and help honor veterans and their families.">
+<link rel="icon" href="https://honoringamericasveterans.org/wp-content/uploads/2019/11/hav-logo2-2019.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- If this page is NOT hosted on the main WordPress site, paste the GTM container snippet (GTM-5VJCR3T) here so the dataLayer events below get picked up. -->
+<style>
+:root{
+  --navy:#252850;--navy-dk:#1a1c3d;--navy-lt:#33376b;
+  --red:#C8352B;--red-dk:#a82a21;--red-pale:#fbeceb;
+  --sky:#5b88c9;--white:#fff;--off:#f6f7fb;--border:#e3e5ee;
+  --text:#1d2040;--gray:#5b6078;--zelle:#6d1ed4;
+  --r:12px;--sh:0 6px 30px rgba(20,22,50,.10);--sh-lg:0 18px 60px rgba(20,22,50,.28);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.4vw,48px);font-weight:900;color:var(--navy);margin-bottom:18px;text-transform:uppercase}
+.lead{font-size:18px;color:var(--gray);max-width:680px}
+.center{text-align:center}.center .lead{margin:0 auto}
+section{padding:88px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border-radius:999px;border:0;cursor:pointer;transition:transform .12s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff;padding:18px 34px;font-size:17px;box-shadow:0 8px 24px rgba(200,53,43,.35)}
+.btn-red:hover{background:var(--red-dk)}
+.btn-ghost{background:transparent;color:var(--navy);border:2px solid var(--navy);padding:14px 26px;font-size:15px}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+
+/* TOP BAR */
+.top{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 14px rgba(20,22,50,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
+.top-logo img{height:64px;width:auto}
+.top-right{display:flex;align-items:center;gap:20px}
+.top-phone{font-weight:700;color:var(--navy);text-decoration:none;font-size:15px}
+.top .btn-red{padding:12px 24px;font-size:14px}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(105deg,rgba(26,28,61,.97) 0%,rgba(37,40,80,.93) 48%,rgba(37,40,80,.72) 100%),url('https://honoringamericasveterans.org/wp-content/uploads/2025/03/veterans-forum-flag-header-background.jpg') center/cover no-repeat;color:#fff;padding:64px 0 72px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 16px;font-size:13px;font-weight:600;letter-spacing:.03em;margin-bottom:22px}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(200,53,43,.3)}
+.hero h1{font-size:clamp(38px,5.6vw,66px);font-weight:900;text-transform:uppercase;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:#ff6b5e}
+.hero-sub{font-size:18px;color:rgba(255,255,255,.88);max-width:560px;margin-bottom:26px}
+.hero-checks{list-style:none;display:grid;gap:12px;margin-bottom:8px}
+.hero-checks li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:16px}
+.hero-checks li span{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:13px}
+
+/* DONATE CARD */
+.dcard{background:#fff;color:var(--text);border-radius:18px;box-shadow:var(--sh-lg);overflow:hidden}
+.dcard-head{background:var(--red);color:#fff;padding:20px 24px;text-align:center}
+.dcard-head strong{display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase;letter-spacing:.02em}
+.dcard-head span{font-size:14px;opacity:.92}
+.dcard-body{padding:24px}
+.chip-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-bottom:10px}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+.chip{border:2px solid var(--border);background:#fff;border-radius:10px;padding:12px 0;font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;color:var(--navy);cursor:pointer;transition:all .15s}
+.chip:hover{border-color:var(--navy)}
+.chip.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.impact-line{background:var(--off);border-radius:10px;padding:12px 14px;font-size:14px;color:var(--navy);font-weight:600;min-height:48px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.steps{list-style:none;display:grid;gap:14px;margin-bottom:18px}
+.steps li{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.steps .n{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--zelle);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.zelle-row{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.zelle-row .zl{height:30px;width:auto}
+.email-box{display:flex;align-items:stretch;border:2px dashed var(--zelle);border-radius:10px;overflow:hidden;margin-top:8px}
+.email-box code{flex:1;padding:12px;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:700;color:var(--zelle);word-break:break-all;background:#f7f2fe;display:flex;align-items:center}
+.copy-btn{background:var(--zelle);color:#fff;border:0;padding:0 18px;font-weight:700;font-size:14px;cursor:pointer;font-family:'Inter',sans-serif;white-space:nowrap}
+.copy-btn.done{background:#1f9d55}
+.qr-wrap{display:none}
+.card-alt{border-top:1px solid var(--border);padding:16px 24px;background:var(--off);text-align:center;font-size:14px;color:var(--gray)}
+.card-alt a{color:var(--navy);font-weight:700}
+.trust-mini{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;font-size:12.5px;color:var(--gray)}
+.trust-mini img{height:38px;width:auto}
+
+/* COUNTDOWN */
+.cd{background:var(--red);color:#fff;padding:26px 0}
+.cd .wrap{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.cd-text strong{font-family:'Archivo',sans-serif;font-size:20px;text-transform:uppercase;display:block}
+.cd-text span{font-size:14.5px;opacity:.92}
+.cd-clock{display:flex;gap:10px}
+.cd-unit{background:rgba(0,0,0,.18);border-radius:10px;padding:10px 14px;min-width:70px}
+.cd-unit b{display:block;font-family:'Archivo',sans-serif;font-size:28px;line-height:1}
+.cd-unit small{font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+
+/* VIDEO FACADE */
+.yt{position:relative;padding-bottom:56.25%;border-radius:14px;overflow:hidden;background:#000;cursor:pointer;box-shadow:var(--sh)}
+.yt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s,opacity .2s;opacity:.9}
+.yt:hover img{transform:scale(1.03);opacity:1}
+.yt .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,.45);border:0;cursor:pointer}
+.yt .play::after{content:'';border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt-cap{font-weight:700;color:var(--navy);margin-top:12px;font-size:15px}
+
+/* WHO WE ARE */
+.who-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+.who-copy p{font-size:17px;color:var(--gray);margin-bottom:16px}
+.who-copy p strong{color:var(--navy)}
+.prog-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:48px}
+.prog{background:var(--off);border-radius:var(--r);padding:26px 24px;border-top:4px solid var(--red)}
+.prog .ic{font-size:30px;margin-bottom:10px}
+.prog h3{font-size:19px;color:var(--navy);text-transform:uppercase;margin-bottom:8px;font-weight:800}
+.prog p{font-size:15px;color:var(--gray)}
+
+/* STATS */
+.stats{background:var(--navy);color:#fff;padding:64px 0}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;text-align:center}
+.stat b{display:block;font-family:'Archivo',sans-serif;font-size:clamp(36px,5vw,54px);font-weight:900;color:#fff;line-height:1}
+.stat b i{font-style:normal;color:#ff6b5e}
+.stat span{display:block;margin-top:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+
+/* IMPACT */
+.impact{background:var(--off)}
+.imp-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
+.imp{background:#fff;border-radius:16px;padding:30px 26px;box-shadow:var(--sh);display:flex;flex-direction:column;border:2px solid transparent;transition:border-color .15s,transform .15s}
+.imp:hover{border-color:var(--red);transform:translateY(-3px)}
+.imp .amt{font-family:'Archivo',sans-serif;font-weight:900;font-size:44px;color:var(--red);line-height:1}
+.imp .amt small{font-size:16px;color:var(--gray);font-weight:700}
+.imp p{margin:14px 0 22px;color:var(--text);font-size:16px;flex:1}
+.imp a{font-weight:700;color:var(--navy);text-decoration:none;font-size:15px}
+.imp a:hover{color:var(--red)}
+.imp.feat{background:var(--navy);color:#fff}
+.imp.feat .amt{color:#ff6b5e}.imp.feat .amt small{color:rgba(255,255,255,.7)}
+.imp.feat p{color:rgba(255,255,255,.88)}.imp.feat a{color:#fff}
+.imp .tag{align-self:flex-start;background:var(--red);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-bottom:14px}
+
+/* TESTIMONIALS */
+.quote-hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;background:var(--navy);color:#fff;border-radius:20px;padding:36px 28px;margin-top:40px;position:relative;overflow:hidden}
+.quote-hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--red);margin:0 auto}
+.quote-hero blockquote{font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,2.6vw,28px);line-height:1.3}
+.quote-hero cite{display:block;margin-top:16px;font-style:normal;font-size:15px;color:rgba(255,255,255,.75);font-family:'Inter',sans-serif}
+.quote-hero cite b{color:#fff}
+.q-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+.q{background:var(--off);border-radius:16px;padding:26px;display:flex;gap:18px;align-items:flex-start}
+.q img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid var(--red)}
+.q p{font-size:15.5px;color:var(--text);font-style:italic;margin-bottom:10px}
+.q cite{font-style:normal;font-size:13.5px;color:var(--gray)}.q cite b{color:var(--navy)}
+.vid-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:48px}
+
+/* PARADE */
+.parade{background:var(--navy-dk);color:#fff}
+.parade h2{color:#fff}
+.parade .lead{color:rgba(255,255,255,.78)}
+.parade .yt-cap{color:#fff}
+.parade-grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:40px}
+
+/* SPONSORS */
+.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 28px;align-items:center;margin-top:40px}
+.logos img{max-height:46px;width:auto;margin:0 auto;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
+.logos img:hover{filter:none;opacity:1}
+.sp-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center;margin-top:56px}
+.sp-copy p{color:var(--gray);font-size:16.5px;margin-bottom:20px}
+
+/* MORE WAYS */
+.ways{background:var(--off)}
+.way-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
+.way{background:#fff;border-radius:16px;padding:28px 24px;box-shadow:var(--sh)}
+.way .ic{font-size:28px;margin-bottom:10px}
+.way h3{font-size:19px;color:var(--navy);text-transform:uppercase;font-weight:800;margin-bottom:8px}
+.way p{color:var(--gray);font-size:15px;margin-bottom:16px}
+.way a{font-weight:700;color:var(--red);text-decoration:none;font-size:15px}
+.valor{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 16px}
+.valor th,.valor td{padding:7px 6px;border-bottom:1px solid var(--border);text-align:center}
+.valor th:first-child,.valor td:first-child{text-align:left}
+.valor thead th{color:var(--navy);font-weight:700}
+
+/* FAQ */
+.faq-list{max-width:820px;margin:36px auto 0;display:grid;gap:10px}
+.faq{background:var(--off);border-radius:12px;overflow:hidden}
+.faq button{width:100%;text-align:left;background:none;border:0;padding:20px 22px;font-family:'Inter',sans-serif;font-size:16px;font-weight:700;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq button::after{content:'+';font-size:22px;color:var(--red);font-weight:700;transition:transform .2s}
+.faq.open button::after{transform:rotate(45deg)}
+.faq .a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 22px;color:var(--gray);font-size:15px}
+.faq.open .a{max-height:420px;padding:0 22px 22px}
+
+/* FINAL CTA */
+.final{background:linear-gradient(105deg,rgba(26,28,61,.96),rgba(37,40,80,.9)),url('https://honoringamericasveterans.org/wp-content/uploads/2025/03/veterans-forum-flag-header-background.jpg') center/cover;color:#fff;text-align:center}
+.final h2{color:#fff}
+.final .lead{color:rgba(255,255,255,.85);margin:0 auto 32px}
+.final-box{max-width:560px;margin:0 auto;background:#fff;border-radius:18px;padding:26px;color:var(--text);box-shadow:var(--sh-lg)}
+.final-box .zl{height:34px;margin:0 auto 12px}
+.final-box p{font-size:15px;color:var(--gray);margin-bottom:6px}
+
+footer{background:var(--navy-dk);color:rgba(255,255,255,.62);padding:44px 0 110px;font-size:13.5px;text-align:center;line-height:1.9}
+footer img.fl{height:70px;width:auto;margin:0 auto 14px}
+footer a{color:rgba(255,255,255,.8)}
+.social{display:flex;justify-content:center;gap:18px;margin:14px 0}
+
+/* STICKY MOBILE BAR */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:200;display:flex;box-shadow:0 -4px 20px rgba(0,0,0,.2);transition:transform .25s}
+.mbar.hide{transform:translateY(110%)}
+.mbar a,.mbar button{flex:1;border:0;padding:17px 8px;font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.03em;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+.mbar .m1{background:var(--zelle);color:#fff}
+.mbar .m2{background:var(--red);color:#fff}
+.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%) translateY(20px);background:#1f9d55;color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;font-size:14px;opacity:0;pointer-events:none;transition:all .25s;z-index:300}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(min-width:720px){
+  .chips{grid-template-columns:repeat(4,1fr)}
+  .prog-grid{grid-template-columns:repeat(3,1fr)}
+  .stat-grid{grid-template-columns:repeat(4,1fr)}
+  .imp-grid{grid-template-columns:repeat(2,1fr)}
+  .q-grid{grid-template-columns:1fr 1fr}
+  .vid-grid{grid-template-columns:1fr 1fr}
+  .parade-grid{grid-template-columns:1fr 1fr}
+  .logos{grid-template-columns:repeat(5,1fr)}
+  .way-grid{grid-template-columns:repeat(2,1fr)}
+  .quote-hero{grid-template-columns:170px 1fr;padding:44px}
+  .cd .wrap{flex-direction:row;justify-content:space-between;text-align:left}
+}
+@media(min-width:980px){
+  .hero{padding:80px 0 92px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:56px}
+  .qr-wrap{display:flex;align-items:center;gap:14px;background:var(--off);border-radius:10px;padding:12px;margin-top:16px}
+  .qr-wrap img{width:96px;height:96px}
+  .qr-wrap p{font-size:13.5px;color:var(--gray)}
+  .qr-wrap p b{color:var(--navy)}
+  .who-grid{grid-template-columns:1fr 1fr}
+  .imp-grid{grid-template-columns:repeat(4,1fr)}
+  .sp-grid{grid-template-columns:1fr 1fr}
+  .way-grid{grid-template-columns:repeat(4,1fr)}
+  .mbar{display:none}
+  footer{padding-bottom:44px}
+}
+@media(max-width:600px){
+  section{padding:60px 0}
+  .wrap{padding:0 18px}
+  .top-logo img{height:50px}
+  .top-phone{display:none}
+  .hero{padding:40px 0 52px}
+  .hero-sub{font-size:16px}
+  .dcard-body{padding:20px 18px}
+  .chip{font-size:16px;padding:11px 0}
+  .cd-unit{min-width:62px;padding:8px 10px}
+  .cd-unit b{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="top-logo" href="#top"><img src="https://honoringamericasveterans.org/wp-content/uploads/2023/03/hav-logo-090820.png" alt="Honoring America's Veterans"></a>
+    <div class="top-right">
+      <a class="top-phone" href="tel:+14803688714">📞 (480) 368-8714</a>
+      <a class="btn btn-red" href="#donate" data-track="nav_donate">Donate</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="pill"><span class="dot"></span>Arizona Nonprofit · Honoring Veterans Since 1997</div>
+      <h1>Help Arizona <em>Honor</em> Its Veterans</h1>
+      <p class="hero-sub">Honoring America's Veterans is the nonprofit behind the <strong>HAV Phoenix Veterans Day Parade</strong>. Your gift funds the parade, Pearl Harbor Day, and Veterans Forums that thank veterans and their families all year long.</p>
+      <ul class="hero-checks">
+        <li><span>✓</span>Puts on Arizona's Veterans Day Parade, now in its 30th year</li>
+        <li><span>✓</span>45,000+ spectators line the route to salute veterans every November 11</li>
+        <li><span>✓</span>Give in 60 seconds with Zelle, straight from your bank app</li>
+      </ul>
+    </div>
+
+    <div class="dcard" id="donate">
+      <div class="dcard-head"><strong>Donate in 60 Seconds</strong><span>Send any amount with Zelle from your bank app</span></div>
+      <div class="dcard-body">
+        <div class="chip-label">Choose your impact</div>
+        <div class="chips" role="group" aria-label="Gift amount">
+          <button class="chip" data-amt="25">$25</button>
+          <button class="chip active" data-amt="50">$50</button>
+          <button class="chip" data-amt="100">$100</button>
+          <button class="chip" data-amt="250">$250</button>
+        </div>
+        <div class="impact-line" id="impactLine">🎖️ $50 supports a veteran's participation in a forum or event.</div>
+
+        <div class="zelle-row"><img class="zl" src="https://honoringamericasveterans.org/wp-content/uploads/2025/11/zelle-logo-purple-1024x443.png" alt="Zelle"><span style="font-size:13px;color:var(--gray)">No fees. 100% of your gift reaches HAV.</span></div>
+        <ol class="steps">
+          <li><span class="n">1</span><span>Open your bank app and tap <b>Send with Zelle</b>.</span></li>
+          <li><span class="n">2</span><span>Send to this email:
+            <div class="email-box"><code id="zelleEmail">paula.pedene@honoringamericasveterans.org</code><button class="copy-btn" data-copy data-track="zelle_copy_hero">Copy</button></div></span></li>
+          <li><span class="n">3</span><span>Enter <b id="stepAmt">$50</b> (or any amount) and add your name in the memo so we can thank you.</span></li>
+        </ol>
+        <div class="qr-wrap">
+          <img src="https://honoringamericasveterans.org/wp-content/uploads/2026/07/honoring-americas-veterans-zelle-qr-code-donate.gif" alt="Zelle QR code for Honoring America's Veterans">
+          <p><b>On a computer?</b> Scan this code with your phone's camera to open Zelle with our info filled in.</p>
+        </div>
+      </div>
+      <div class="card-alt">Prefer a credit card? <a href="https://honoringamericasveterans.org/product/donation/" data-track="card_donate_hero">Give online here →</a>
+        <div class="trust-mini"><img src="https://honoringamericasveterans.org/wp-content/uploads/2022/08/candid-seal-silver-2024.png" alt="Candid Silver Transparency Seal 2024"><span>Candid Silver Transparency Seal · Qualified charitable organization</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<div class="cd" id="countdown">
+  <div class="wrap">
+    <div class="cd-text"><strong>The 30th HAV Phoenix Veterans Day Parade</strong><span>Wednesday, November 11 · 11 a.m. · Grand Marshals: a 100-year-old D-Day sailor and Super Bowl XX champion Jim McMahon</span></div>
+    <div class="cd-clock" aria-label="Countdown to the parade">
+      <div class="cd-unit"><b id="cdD">--</b><small>Days</small></div>
+      <div class="cd-unit"><b id="cdH">--</b><small>Hours</small></div>
+      <div class="cd-unit"><b id="cdM">--</b><small>Min</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO WE ARE + TRAILER -->
+<section>
+  <div class="wrap">
+    <div class="who-grid">
+      <div class="who-copy">
+        <span class="eyebrow">Who We Are</span>
+        <h2>A Thank You 30 Years in the Making</h2>
+        <p>In 1997 we held our first parade in Phoenix. We expected a celebration. What we got was something bigger: veterans telling us it was the first time anyone had ever truly thanked them.</p>
+        <p><strong>That is still the whole point.</strong> Honoring America's Veterans brings Arizona together to recognize the service of veterans and the families who stood beside them, through public events, education, and community.</p>
+        <p>We don't receive government funding for the parade. It happens because people like you decide it should.</p>
+        <a class="btn btn-red" href="#donate" data-track="who_donate">Donate with Zelle</a>
+      </div>
+      <div>
+        <div class="yt" data-id="uxeOPSdktVY" data-title="Veterans Day trailer"><img src="https://i.ytimg.com/vi/uxeOPSdktVY/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play the Veterans Day trailer"></button></div>
+        <p class="yt-cap">▶ Watch: This Is What Your Gift Makes Possible</p>
+      </div>
+    </div>
+
+    <div class="prog-grid">
+      <div class="prog"><div class="ic">🇺🇸</div><h3>Phoenix Veterans Day Parade</h3><p>Arizona's signature salute to veterans every November 11. Bands, floats, flyovers, and 45,000+ neighbors lining the route to say thank you.</p></div>
+      <div class="prog"><div class="ic">⚓</div><h3>Pearl Harbor Day</h3><p>A commemoration every December 7 that keeps the memory of Pearl Harbor and the generation who served alive for Arizona.</p></div>
+      <div class="prog"><div class="ic">🤝</div><h3>Veterans Forums</h3><p>Year-round gatherings where veterans connect, share stories, and build camaraderie with others who understand.</p></div>
+    </div>
+    <p class="center" style="margin-top:22px;color:var(--gray);font-size:14.5px">Plus the High School Essay Competition, the Tattered Flag Project, and the Veterans Grand Marshal program.</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap stat-grid">
+    <div class="stat"><b>30<i>+</i></b><span>Years of Service</span></div>
+    <div class="stat"><b>45K<i>+</i></b><span>Parade Spectators Each Year</span></div>
+    <div class="stat"><b>1.5M</b><span>Spectators &amp; Participants</span></div>
+    <div class="stat"><b>600K</b><span>Arizona Veterans Recognized</span></div>
+  </div>
+</div>
+
+<!-- IMPACT -->
+<section class="impact">
+  <div class="wrap center">
+    <span class="eyebrow">Your Gift at Work</span>
+    <h2>Every Dollar Says Thank You</h2>
+    <p class="lead">Every gift, any size, goes toward the events where veterans are seen, celebrated, and remembered.</p>
+    <div class="imp-grid" style="text-align:left">
+      <div class="imp"><div class="amt">$25</div><p>Provides a warm welcome for veterans at our community events.</p><a href="#donate" data-track="impact_25">Give $25 →</a></div>
+      <div class="imp"><div class="amt">$50</div><p>Supports a veteran's participation in a Veterans Forum or event.</p><a href="#donate" data-track="impact_50">Give $50 →</a></div>
+      <div class="imp"><div class="amt">$100</div><p>Helps create programs that bring veterans and their families together.</p><a href="#donate" data-track="impact_100">Give $100 →</a></div>
+      <div class="imp feat"><span class="tag">Monthly</span><div class="amt">$100<small>/mo</small></div><p>Over a year, funds the stipend for one of the ten bands that march in the Veterans Day Parade.</p><a href="https://honoringamericasveterans.org/product/donation-monthly/" data-track="impact_monthly">Give monthly →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">In Their Words</span>
+      <h2>Why It Matters to the Veterans We Honor</h2>
+    </div>
+    <div class="quote-hero">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2024/07/Peter-Haas.webp" alt="Pete Haas, Korean War veteran" loading="lazy">
+      <div>
+        <blockquote>"When I came back from the Korean War, people turned their backs on me and called me horrible names. I carried that pain with me for nearly 40 years, but thanks to the parade, that demon is gone."</blockquote>
+        <cite><b>Pete Haas</b> · Korean War Veteran, Purple Heart Recipient</cite>
+      </div>
+    </div>
+    <div class="q-grid">
+      <div class="q"><img src="https://honoringamericasveterans.org/wp-content/uploads/2025/07/rick-romley.jpg" alt="Rick Romley" loading="lazy"><div><p>"Honoring America's Veterans ensures that never again shall we forget the men and women that have defended our freedom."</p><cite><b>Rick Romley</b> · Retired Veterans Court Judge, Purple Heart Recipient</cite></div></div>
+      <div class="q"><img src="https://honoringamericasveterans.org/wp-content/uploads/2023/05/executive-director.paula_.scaled.jpg" alt="Paula Pedene" loading="lazy"><div><p>"Our veterans tell us these events help them heal. We do so by honoring, celebrating, and recognizing them for their military service to our country."</p><cite><b>Paula Pedene</b> · Executive Director, Honoring America's Veterans</cite></div></div>
+    </div>
+
+    <div class="vid-grid">
+      <div><div class="yt" data-id="QWiyDFK0NBA" data-title="Veteran experience 1"><img src="https://i.ytimg.com/vi/QWiyDFK0NBA/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play veteran story 1"></button></div><p class="yt-cap">Veteran Story</p></div>
+      <div><div class="yt" data-id="rl8KU9C7FJQ" data-title="Veteran experience 2"><img src="https://i.ytimg.com/vi/rl8KU9C7FJQ/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play veteran story 2"></button></div><p class="yt-cap">Veteran Story</p></div>
+      <div><div class="yt" data-id="mc8FLRmuCL8" data-title="Veteran experience 3"><img src="https://i.ytimg.com/vi/mc8FLRmuCL8/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play veteran story 3"></button></div><p class="yt-cap">Veteran Story</p></div>
+      <div><div class="yt" data-id="vjjwozMzk6s" data-title="Veteran experience 4"><img src="https://i.ytimg.com/vi/vjjwozMzk6s/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play veteran story 4"></button></div><p class="yt-cap">Veteran Story</p></div>
+    </div>
+    <div class="center" style="margin-top:40px"><a class="btn btn-red" href="#donate" data-track="stories_donate">Honor a Veteran Today</a></div>
+  </div>
+</section>
+
+<!-- PARADE -->
+<section class="parade">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="color:#ff6b5e">See It for Yourself</span>
+      <h2>This Is What Your Gift Builds</h2>
+      <p class="lead">One morning a year, Central Phoenix stops to say thank you. Here's what that looks like.</p>
+    </div>
+    <div class="parade-grid">
+      <div><div class="yt" data-id="fImK1pOecJM" data-title="Last year's parade"><img src="https://i.ytimg.com/vi/fImK1pOecJM/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play last year's parade video"></button></div><p class="yt-cap">Last Year's Parade</p></div>
+      <div><div class="yt" data-id="2wg_5BgC9Lo" data-title="Most popular video"><img src="https://i.ytimg.com/vi/2wg_5BgC9Lo/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play our most-watched video"></button></div><p class="yt-cap">Our Most-Watched Moment</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">You're in Good Company</span>
+      <h2>Supported by Arizona's Leading Organizations</h2>
+    </div>
+    <div class="logos">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2025/11/usaa-logo-blue.png" alt="USAA" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2019/01/sponsor-intel-1.jpg" alt="Intel" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2022/09/logo-aps.jpg" alt="APS" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2024/04/triwest-logo1080-1024x404.webp" alt="TriWest" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2024/04/uopx-sig-print-ver-red.png" alt="University of Phoenix" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2022/09/sponsor-general-dynamics.jpg" alt="General Dynamics" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2022/09/sponsor-uhaul.jpg" alt="U-Haul" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2022/09/sponsor-the-arizona-republic.jpg" alt="The Arizona Republic" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2019/01/sponsor-ktar-1.jpg" alt="KTAR" loading="lazy">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2026/08/mountain-america-credit-union-logo-300x76.png" alt="Mountain America Credit Union" loading="lazy">
+    </div>
+    <div class="sp-grid">
+      <div class="sp-copy">
+        <span class="eyebrow">Business Owner?</span>
+        <h2 style="font-size:clamp(26px,3.4vw,38px)">Put Your Company Behind Arizona's Veterans</h2>
+        <p>Sponsors get a parade entry, VIP seating, recognition in the parade program, and a thank you from the announcers in front of 45,000 people. It's also a powerful way to recognize the veterans on your own team.</p>
+        <a class="btn btn-ghost" href="https://honoringamericasveterans.org/sponsors/" data-track="sponsor_click">See Sponsorship Options</a>
+      </div>
+      <div><div class="yt" data-id="7WqoaFcVVSQ" data-title="Proud sponsor"><img src="https://i.ytimg.com/vi/7WqoaFcVVSQ/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play proud sponsor video"></button></div><p class="yt-cap">Hear From a Proud Sponsor</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE WAYS TO GIVE -->
+<section class="ways">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">More Ways to Give</span>
+      <h2>Give the Way That Works for You</h2>
+    </div>
+    <div class="way-grid">
+      <div class="way"><div class="ic">🔁</div><h3>Give Monthly</h3><p>Spread your support across the year so veterans are recognized all year, not just in November.</p><a href="https://honoringamericasveterans.org/product/donation-monthly/" data-track="way_monthly">Start a monthly gift →</a></div>
+      <div class="way"><div class="ic">🎗️</div><h3>Tribute Gift</h3><p>Honor a veteran or loved one for a birthday, milestone, or memory. We'll notify them (without the amount).</p><a href="https://honoringamericasveterans.org/product/donation-custom-amount/" data-track="way_tribute">Make a tribute gift →</a></div>
+      <div class="way"><div class="ic">⭐</div><h3>Valor Fund</h3>
+        <table class="valor"><thead><tr><th>Level</th><th>Gift</th><th>VIP Parade Seats</th></tr></thead><tbody>
+          <tr><td>Copper</td><td>$250</td><td>2</td></tr><tr><td>Turquoise</td><td>$500</td><td>2</td></tr><tr><td>Silver</td><td>$1,000</td><td>4</td></tr><tr><td>Gold</td><td>$1,500</td><td>6</td></tr>
+        </tbody></table>
+        <a href="https://honoringamericasveterans.org/product/donation-valor-fund/" data-track="way_valor">Join the Valor Fund →</a></div>
+      <div class="way"><div class="ic">📈</div><h3>Stock, IRA &amp; DAF</h3><p>Give appreciated stock, an IRA Qualified Charitable Distribution, or a Donor Advised Fund grant. Employer matching can double your gift.</p><a href="tel:+14807722934" data-track="way_planned">Call (480) 772-2934 →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Questions</span><h2>Before You Give</h2></div>
+    <div class="faq-list">
+      <div class="faq"><button>Who is Honoring America's Veterans?</button><div class="a">We're an Arizona nonprofit, Honoring America's Veterans, Inc., that has produced the Phoenix Veterans Day Parade since 1997. We also host Pearl Harbor Day, Veterans Forums, a high school essay competition, and the Tattered Flag Project.</div></div>
+      <div class="faq"><button>Why do you recommend Zelle?</button><div class="a">Zelle moves money directly from your bank to ours, with no processing fees taken out, so your full gift goes to work for veterans. It takes about a minute in your banking app. If you'd rather use a card, you can <a href="https://honoringamericasveterans.org/product/donation/">give online here</a>.</div></div>
+      <div class="faq"><button>How do I know I'm sending to the right place?</button><div class="a">Send to <b>paula.pedene@honoringamericasveterans.org</b>. That's the official donation address for Paula Pedene, our Executive Director, and it is the same address listed on our <a href="https://honoringamericasveterans.org/donation/">website's donation page</a>. Questions? Call us at (480) 368-8714 before you send.</div></div>
+      <div class="faq"><button>Will I get a receipt? Is my gift tax-deductible?</button><div class="a">Add your name and email in the Zelle memo and we'll send a thank-you and receipt for your records. Honoring America's Veterans is a qualified charitable organization; please check with your tax advisor about deductibility for your situation.</div></div>
+      <div class="faq"><button>Where does my money go?</button><div class="a">Your gift funds the events and programs that recognize veterans: the parade (bands, logistics, veteran participants), Pearl Harbor Day, Veterans Forums, and our education programs. See our <a href="https://honoringamericasveterans.org/financial-information/">financial information</a>.</div></div>
+      <div class="faq"><button>Can my business get involved?</button><div class="a">Yes. Sponsorships include parade entries, VIP seating, and recognition in front of 45,000+ spectators. <a href="https://honoringamericasveterans.org/sponsors/">See sponsorship options</a> or email paula.pedene@honoringamericasveterans.org.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>They Served. Let's Say Thank You.</h2>
+    <p class="lead">Your gift today helps Arizona honor its veterans on November 11 and all year long.</p>
+    <div class="final-box">
+      <img class="zl" src="https://honoringamericasveterans.org/wp-content/uploads/2025/11/zelle-logo-purple-1024x443.png" alt="Zelle">
+      <p>Open your bank app, choose Zelle, and send any amount to:</p>
+      <div class="email-box"><code>paula.pedene@honoringamericasveterans.org</code><button class="copy-btn" data-copy data-track="zelle_copy_final">Copy</button></div>
+      <p style="margin-top:14px">Prefer a card? <a href="https://honoringamericasveterans.org/product/donation/" style="color:var(--navy);font-weight:700" data-track="card_donate_final">Give online →</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="fl" src="https://honoringamericasveterans.org/wp-content/uploads/2019/04/honoring-americas-veterans-logo-footer.png" alt="Honoring America's Veterans">
+    <div><b style="color:#fff">Honoring America's Veterans, Inc.</b> · We Salute You!</div>
+    <div>6501 East Greenway Parkway, #103-235, Scottsdale, AZ 85254</div>
+    <div><a href="tel:+14803688714">(480) 368-8714</a> · <a href="mailto:paula.pedene@honoringamericasveterans.org">paula.pedene@honoringamericasveterans.org</a></div>
+    <div class="social">
+      <a href="https://www.facebook.com/HonoringAmericasVeterans/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/c/HonoringAmericasVeterans" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.instagram.com/honoringamericasveterans/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/honoring-arizonas-veterans/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>The Phoenix Veterans Day Parade is managed and presented by Honoring America's Veterans, Inc.</div>
+    <div>© 2026 Honoring America's Veterans · <a href="https://honoringamericasveterans.org/privacy-policy/">Privacy</a> · <a href="https://honoringamericasveterans.org/financial-information/">Financial Information</a></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <button class="m1" data-copy data-track="zelle_copy_mbar">📋 Copy Zelle Email</button>
+  <a class="m2" href="#donate" data-track="mbar_donate">❤️ Donate</a>
+</div>
+<div class="toast" id="toast">✓ Zelle email copied. Paste it in your bank app.</div>
+
+<script>
+(function(){
+  var EMAIL='paula.pedene@honoringamericasveterans.org';
+  window.dataLayer=window.dataLayer||[];
+  function track(label){window.dataLayer.push({event:'hav_lp_click',click_label:label,page:'donate_lp'});}
+
+  /* Impact chips */
+  var impacts={25:'🎖️ $25 provides a warm welcome for veterans at our community events.',50:'🎖️ $50 supports a veteran\'s participation in a forum or event.',100:'🎖️ $100 helps create programs that bring veterans together.',250:'⭐ $250 makes you a Copper member of the Valor Fund, with 2 VIP parade seats.'};
+  document.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){
+    document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('active')});
+    c.classList.add('active');var a=c.dataset.amt;
+    document.getElementById('impactLine').textContent=impacts[a];
+    document.getElementById('stepAmt').textContent='$'+a;
+    track('chip_'+a);
+  });});
+
+  /* Copy Zelle email */
+  var toast=document.getElementById('toast');
+  function fallbackCopy(){var t=document.createElement('textarea');t.value=EMAIL;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(t);}
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+    var done=function(){
+      toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},2600);
+      if(b.classList.contains('copy-btn')){b.textContent='Copied ✓';b.classList.add('done');setTimeout(function(){b.textContent='Copy';b.classList.remove('done')},2600);}
+    };
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(EMAIL).then(done,function(){fallbackCopy();done();});}else{fallbackCopy();done();}
+    window.dataLayer.push({event:'zelle_email_copy',click_label:b.dataset.track||'copy'});
+  });});
+
+  /* Click tracking */
+  document.querySelectorAll('a[data-track]').forEach(function(a){a.addEventListener('click',function(){track(a.dataset.track);});});
+
+  /* YouTube facades (keeps page fast for ad traffic) */
+  document.querySelectorAll('.yt').forEach(function(el){el.addEventListener('click',function(){
+    if(el.querySelector('iframe')) return;
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.id+'?autoplay=1&rel=0';
+    f.title=el.dataset.title;f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;
+    el.innerHTML='';el.appendChild(f);
+    window.dataLayer.push({event:'video_play',video_title:el.dataset.title});
+  });});
+
+  /* FAQ */
+  document.querySelectorAll('.faq button').forEach(function(btn){btn.addEventListener('click',function(){
+    var f=btn.parentElement,open=f.classList.contains('open');
+    document.querySelectorAll('.faq.open').forEach(function(x){x.classList.remove('open')});
+    if(!open) f.classList.add('open');
+  });});
+
+  /* Countdown to Nov 11, 2026, 11:00 a.m. Arizona time (UTC-7) */
+  var target=new Date('2026-11-11T18:00:00Z').getTime();
+  function tick(){
+    var d=target-Date.now();
+    if(d<=0){document.getElementById('countdown').style.display='none';return;}
+    document.getElementById('cdD').textContent=Math.floor(d/864e5);
+    document.getElementById('cdH').textContent=Math.floor(d%864e5/36e5);
+    document.getElementById('cdM').textContent=Math.floor(d%36e5/6e4);
+  }
+  tick();setInterval(tick,30000);
+
+  /* Hide mobile bar while the donate card is on screen */
+  var bar=document.getElementById('mbar'),card=document.getElementById('donate');
+  if('IntersectionObserver' in window&&card){new IntersectionObserver(function(e){bar.classList.toggle('hide',e[0].isIntersecting);},{threshold:.25}).observe(card);}
+})();
+</script>
+</body>
+</html>
