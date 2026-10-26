@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer at the Phoenix Veterans Day Parade | Honoring America's Veterans</title>
+<meta name="description" content="Volunteer at the 30th HAV Phoenix Veterans Day Parade on November 11. Balloon handlers, banner carriers, float builders and more. Pick a role and sign up in minutes.">
+<link rel="icon" href="https://honoringamericasveterans.org/wp-content/uploads/2019/11/hav-logo2-2019.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- If this page is NOT hosted on the main WordPress site, paste the GTM container snippet (GTM-5VJCR3T) here so the dataLayer events below get picked up. -->
+<style>
+:root{
+  --navy:#252850;--navy-dk:#1a1c3d;--navy-lt:#33376b;
+  --red:#C8352B;--red-dk:#a82a21;--red-pale:#fbeceb;
+  --white:#fff;--off:#f6f7fb;--border:#e3e5ee;
+  --text:#1d2040;--gray:#5b6078;--green:#1f9d55;--gold:#e0a400;
+  --r:12px;--sh:0 6px 30px rgba(20,22,50,.10);--sh-lg:0 18px 60px rgba(20,22,50,.28);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.4vw,48px);font-weight:900;color:var(--navy);margin-bottom:18px;text-transform:uppercase}
+.lead{font-size:18px;color:var(--gray);max-width:700px}
+.center{text-align:center}.center .lead{margin:0 auto}
+section{padding:88px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border-radius:999px;border:0;cursor:pointer;transition:transform .12s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff;padding:18px 34px;font-size:17px;box-shadow:0 8px 24px rgba(200,53,43,.35)}
+.btn-red:hover{background:var(--red-dk)}
+.btn-ghost{background:transparent;color:var(--navy);border:2px solid var(--navy);padding:14px 26px;font-size:15px}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.btn-white{background:#fff;color:var(--navy);padding:16px 30px;font-size:16px}
+
+/* TOP */
+.top{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 14px rgba(20,22,50,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
+.top-logo img{height:64px;width:auto}
+.top-right{display:flex;align-items:center;gap:20px}
+.top-phone{font-weight:700;color:var(--navy);text-decoration:none;font-size:15px}
+.top .btn-red{padding:12px 24px;font-size:14px}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(105deg,rgba(26,28,61,.97) 0%,rgba(37,40,80,.93) 50%,rgba(37,40,80,.74) 100%),url('https://honoringamericasveterans.org/wp-content/uploads/2025/03/veterans-forum-flag-header-background.jpg') center/cover no-repeat;color:#fff;padding:64px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 16px;font-size:13px;font-weight:600;letter-spacing:.03em;margin-bottom:22px}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(200,53,43,.3)}
+.hero h1{font-size:clamp(36px,5.4vw,64px);font-weight:900;text-transform:uppercase;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:#ff6b5e}
+.hero-sub{font-size:18px;color:rgba(255,255,255,.88);max-width:560px;margin-bottom:26px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin-bottom:28px}
+.fact{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:14px 12px}
+.fact b{display:block;font-family:'Archivo',sans-serif;font-size:20px;line-height:1.1}
+.fact span{font-size:12.5px;color:rgba(255,255,255,.72)}
+.hero-links{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-links a.txt{color:#fff;font-weight:600;font-size:15px}
+
+/* PICKER CARD */
+.pcard{background:#fff;color:var(--text);border-radius:18px;box-shadow:var(--sh-lg);overflow:hidden}
+.pcard-head{background:var(--red);color:#fff;padding:20px 24px;text-align:center}
+.pcard-head strong{display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase}
+.pcard-head span{font-size:14px;opacity:.92}
+.pcard-body{padding:20px 20px 8px}
+.qlist{list-style:none;display:grid;gap:8px}
+.qrole{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1.5px solid var(--border);border-radius:12px;padding:12px 14px;text-decoration:none;transition:border-color .15s,background .15s}
+.qrole:hover{border-color:var(--red);background:var(--red-pale)}
+.qrole .l{display:flex;align-items:center;gap:12px}
+.qrole .ic{font-size:22px}
+.qrole b{display:block;font-size:15px;color:var(--navy)}
+.qrole small{font-size:12.5px;color:var(--gray)}
+.qrole .go{font-weight:800;color:var(--red);font-size:13px;white-space:nowrap;text-transform:uppercase;letter-spacing:.04em}
+.pcard-foot{padding:14px 20px 20px;text-align:center;font-size:14px;color:var(--gray)}
+.pcard-foot a{color:var(--navy);font-weight:700}
+
+/* COUNTDOWN */
+.cd{background:var(--red);color:#fff;padding:26px 0}
+.cd .wrap{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.cd-text strong{font-family:'Archivo',sans-serif;font-size:20px;text-transform:uppercase;display:block}
+.cd-text span{font-size:14.5px;opacity:.92}
+.cd-clock{display:flex;gap:10px}
+.cd-unit{background:rgba(0,0,0,.18);border-radius:10px;padding:10px 14px;min-width:70px}
+.cd-unit b{display:block;font-family:'Archivo',sans-serif;font-size:28px;line-height:1}
+.cd-unit small{font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+
+/* VIDEO FACADE */
+.yt{position:relative;padding-bottom:56.25%;border-radius:14px;overflow:hidden;background:#000;cursor:pointer;box-shadow:var(--sh)}
+.yt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s,opacity .2s;opacity:.9}
+.yt:hover img{transform:scale(1.03);opacity:1}
+.yt .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,.45);border:0;cursor:pointer}
+.yt .play::after{content:'';border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt-cap{font-weight:700;color:var(--navy);margin-top:12px;font-size:15px}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+.why-copy p{font-size:17px;color:var(--gray);margin-bottom:16px}
+.why-copy p strong{color:var(--navy)}
+.benefits{display:grid;grid-template-columns:1fr;gap:16px;margin-top:48px}
+.ben{background:var(--off);border-radius:var(--r);padding:26px 24px;border-top:4px solid var(--red)}
+.ben .ic{font-size:30px;margin-bottom:10px}
+.ben h3{font-size:19px;color:var(--navy);text-transform:uppercase;margin-bottom:8px;font-weight:800}
+.ben p{font-size:15px;color:var(--gray)}
+
+/* ROLES */
+.roles{background:var(--off)}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:28px 0 32px}
+.fbtn{border:2px solid var(--border);background:#fff;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;color:var(--navy);cursor:pointer;font-family:'Inter',sans-serif;transition:all .15s}
+.fbtn:hover{border-color:var(--navy)}
+.fbtn.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.role-grid{display:grid;grid-template-columns:1fr;gap:18px}
+.role{background:#fff;border-radius:16px;padding:26px 24px;box-shadow:var(--sh);display:flex;flex-direction:column;border:2px solid transparent;transition:border-color .15s,transform .15s}
+.role:hover{border-color:var(--red);transform:translateY(-3px)}
+.role.hidden{display:none}
+.role-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+.role .ic{font-size:30px}
+.spots{background:var(--red-pale);color:var(--red);font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:5px 10px;border-radius:999px;white-space:nowrap}
+.role h3{font-size:19px;color:var(--navy);text-transform:uppercase;font-weight:800;margin-bottom:8px}
+.role p{font-size:15px;color:var(--gray);flex:1;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.tag{font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--off);color:var(--navy)}
+.tag.light{background:#e8f6ee;color:var(--green)}
+.tag.active{background:#fff4dc;color:#a87800}
+.tag.creative{background:#efe8fb;color:#6d1ed4}
+.tag.group{background:#e7eefb;color:#2c5bb0}
+.role .btn-red{padding:14px 22px;font-size:14px;align-self:flex-start}
+
+/* TIMELINE */
+.tl{display:grid;grid-template-columns:1fr;gap:0;max-width:760px;margin:40px auto 0;position:relative}
+.tl-item{display:flex;gap:20px;padding:0 0 28px;position:relative}
+.tl-item::before{content:'';position:absolute;left:27px;top:56px;bottom:0;width:2px;background:var(--border)}
+.tl-item:last-child::before{display:none}
+.tl-time{flex-shrink:0;width:56px;height:56px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.1}
+.tl-item h3{font-size:18px;color:var(--navy);text-transform:uppercase;font-weight:800;margin:6px 0 4px}
+.tl-item p{color:var(--gray);font-size:15px}
+
+/* COMMITTEES */
+.comm{background:var(--navy);color:#fff}
+.comm h2{color:#fff}
+.comm .lead{color:rgba(255,255,255,.8)}
+.comm-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
+.cm{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column}
+.cm .ic{font-size:30px;margin-bottom:10px}
+.cm h3{font-size:19px;text-transform:uppercase;font-weight:800;margin-bottom:10px}
+.cm p{font-size:15px;color:rgba(255,255,255,.75);margin-bottom:8px}
+.cm p b{color:#fff}
+.cm .btn{margin-top:auto;align-self:flex-start}
+.comm-note{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-top:32px;font-size:14.5px;color:rgba(255,255,255,.85);font-weight:600}
+
+/* PROOF */
+.quote-hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;background:var(--off);border-radius:20px;padding:36px 28px;margin-top:40px}
+.quote-hero img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid var(--red);margin:0 auto}
+.quote-hero blockquote{font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,2.6vw,27px);line-height:1.3;color:var(--navy)}
+.quote-hero cite{display:block;margin-top:16px;font-style:normal;font-size:15px;color:var(--gray)}
+.quote-hero cite b{color:var(--navy)}
+.vid-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:40px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;text-align:center;margin-top:48px}
+.stat b{display:block;font-family:'Archivo',sans-serif;font-size:clamp(34px,4.6vw,50px);font-weight:900;color:var(--red);line-height:1}
+.stat span{display:block;margin-top:8px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
+
+/* GROUPS */
+.groups{background:var(--off)}
+.g-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+.g-list{list-style:none;display:grid;gap:12px;margin:18px 0 26px}
+.g-list li{display:flex;gap:12px;font-size:16px;color:var(--text)}
+.g-list li span{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+
+/* FAQ */
+.faq-list{max-width:820px;margin:36px auto 0;display:grid;gap:10px}
+.faq{background:var(--off);border-radius:12px;overflow:hidden}
+.faq button{width:100%;text-align:left;background:none;border:0;padding:20px 22px;font-family:'Inter',sans-serif;font-size:16px;font-weight:700;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq button::after{content:'+';font-size:22px;color:var(--red);font-weight:700;transition:transform .2s}
+.faq.open button::after{transform:rotate(45deg)}
+.faq .a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 22px;color:var(--gray);font-size:15px}
+.faq.open .a{max-height:420px;padding:0 22px 22px}
+
+/* FINAL */
+.final{background:linear-gradient(105deg,rgba(26,28,61,.96),rgba(37,40,80,.9)),url('https://honoringamericasveterans.org/wp-content/uploads/2025/03/veterans-forum-flag-header-background.jpg') center/cover;color:#fff;text-align:center}
+.final h2{color:#fff}
+.final .lead{color:rgba(255,255,255,.85);margin:0 auto 32px}
+.final-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.final small{display:block;margin-top:26px;color:rgba(255,255,255,.7);font-size:14.5px}
+.final small a{color:#fff;font-weight:700}
+
+footer{background:var(--navy-dk);color:rgba(255,255,255,.62);padding:44px 0 110px;font-size:13.5px;text-align:center;line-height:1.9}
+footer img.fl{height:70px;width:auto;margin:0 auto 14px}
+footer a{color:rgba(255,255,255,.8)}
+.social{display:flex;justify-content:center;gap:18px;margin:14px 0}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:200;display:flex;box-shadow:0 -4px 20px rgba(0,0,0,.2);transition:transform .25s}
+.mbar.hide{transform:translateY(110%)}
+.mbar a{flex:1;padding:17px 8px;font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.03em;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px}
+.mbar .m1{background:var(--red);color:#fff}
+.mbar .m2{background:var(--navy);color:#fff}
+
+@media(min-width:720px){
+  .benefits{grid-template-columns:repeat(3,1fr)}
+  .role-grid{grid-template-columns:repeat(2,1fr)}
+  .comm-grid{grid-template-columns:repeat(3,1fr)}
+  .vid-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .quote-hero{grid-template-columns:160px 1fr;padding:44px}
+  .cd .wrap{flex-direction:row;justify-content:space-between;text-align:left}
+}
+@media(min-width:980px){
+  .hero{padding:80px 0 92px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:56px}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .role-grid{grid-template-columns:repeat(3,1fr)}
+  .g-grid{grid-template-columns:1fr 1fr}
+  .mbar{display:none}
+  footer{padding-bottom:44px}
+}
+@media(max-width:600px){
+  section{padding:60px 0}
+  .wrap{padding:0 18px}
+  .top-logo img{height:50px}
+  .top-phone{display:none}
+  .hero{padding:40px 0 52px}
+  .hero-sub{font-size:16px}
+  .fact b{font-size:17px}
+  .cd-unit{min-width:62px;padding:8px 10px}
+  .cd-unit b{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="top-logo" href="#top"><img src="https://honoringamericasveterans.org/wp-content/uploads/2023/03/hav-logo-090820.png" alt="Honoring America's Veterans"></a>
+    <div class="top-right">
+      <a class="top-phone" href="tel:+14803688714">📞 (480) 368-8714</a>
+      <a class="btn btn-red" href="#roles" data-track="nav_signup">Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="pill"><span class="dot"></span>Volunteers Needed · Phoenix, AZ</div>
+      <h1>Volunteer at the <em>30th</em> Phoenix Veterans Day Parade</h1>
+      <p class="hero-sub">The HAV Phoenix Veterans Day Parade is an all-volunteer effort. It takes hundreds of people to line up the bands, carry the banners, and walk the balloons down the route while 45,000 neighbors salute our veterans. One morning of your time makes it happen.</p>
+      <div class="facts">
+        <div class="fact"><b>Nov 11</b><span>Veterans Day</span></div>
+        <div class="fact"><b>9am–2pm</b><span>About 5 hours</span></div>
+        <div class="fact"><b>200+</b><span>Volunteers needed</span></div>
+      </div>
+      <div class="hero-links">
+        <a class="btn btn-red" href="#roles" data-track="hero_roles">See All Roles</a>
+        <a class="txt" href="#committees" data-track="hero_committees">Want to help year-round? →</a>
+      </div>
+    </div>
+
+    <div class="pcard" id="quick">
+      <div class="pcard-head"><strong>Pick Your Role</strong><span>Most-needed parade day spots</span></div>
+      <div class="pcard-body">
+        <ul class="qlist" id="quickList"></ul>
+      </div>
+      <div class="pcard-foot">Not sure where you fit? <a href="#roles" data-track="quick_all">Browse all 10 roles</a> or call <a href="tel:+14803688714">(480) 368-8714</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<div class="cd" id="countdown">
+  <div class="wrap">
+    <div class="cd-text"><strong>Volunteer check-in opens Nov 11 at 9 a.m.</strong><span>Grand Marshals: a 100-year-old D-Day sailor and Super Bowl XX champion Jim McMahon</span></div>
+    <div class="cd-clock" aria-label="Countdown to volunteer check-in">
+      <div class="cd-unit"><b id="cdD">--</b><small>Days</small></div>
+      <div class="cd-unit"><b id="cdH">--</b><small>Hours</small></div>
+      <div class="cd-unit"><b id="cdM">--</b><small>Min</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY -->
+<section>
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-copy">
+        <span class="eyebrow">Why Volunteer</span>
+        <h2>The Best Seat at the Parade Is in It</h2>
+        <p>Spectators watch the parade. Volunteers make it happen. You'll be right there when a Korean War veteran rides past and the crowd stands up, or when a marching band from a local high school rounds the corner.</p>
+        <p><strong>No experience needed.</strong> Pick a role that fits you, show up, and our parade committee walks you through the rest. Bring a friend, your family, your coworkers, or your scout troop.</p>
+        <a class="btn btn-red" href="#roles" data-track="why_roles">Find My Role</a>
+      </div>
+      <div>
+        <div class="yt" data-id="uxeOPSdktVY" data-title="Veterans Day trailer"><img src="https://i.ytimg.com/vi/uxeOPSdktVY/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play the Veterans Day trailer"></button></div>
+        <p class="yt-cap">▶ Watch: What You'll Be Part Of</p>
+      </div>
+    </div>
+    <div class="benefits">
+      <div class="ben"><div class="ic">🇺🇸</div><h3>Honor Their Service</h3><p>Give back to the veterans who gave so much, in the most visible way Phoenix has to say thank you.</p></div>
+      <div class="ben"><div class="ic">👥</div><h3>Great for Groups</h3><p>Families, friends, coworkers, and scout units. Many roles need pairs or teams, so bring your people.</p></div>
+      <div class="ben"><div class="ic">⏱️</div><h3>One Morning</h3><p>About 9 a.m. to 2 p.m. on November 11. Or join a planning committee if you want to help all year.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLES -->
+<section class="roles" id="roles">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Parade Day Roles · Nov 11</span>
+      <h2>Choose Where You Want to Help</h2>
+      <p class="lead">Every role matters. Filter by what sounds like you, then tap Sign Up and we'll reach out to get you started.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter roles">
+      <button class="fbtn active" data-filter="all">All Roles</button>
+      <button class="fbtn" data-filter="light">Easygoing</button>
+      <button class="fbtn" data-filter="active">Active</button>
+      <button class="fbtn" data-filter="creative">Creative</button>
+      <button class="fbtn" data-filter="group">Great for Groups</button>
+    </div>
+    <div class="role-grid" id="roleGrid"></div>
+  </div>
+</section>
+
+<!-- DAY TIMELINE -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">What to Expect</span>
+      <h2>Your Parade Day</h2>
+    </div>
+    <div class="tl">
+      <div class="tl-item"><div class="tl-time">Before</div><div><h3>Sign up and get your details</h3><p>After you sign up, the parade committee reaches out with your assignment, where to report, and what to bring.</p></div></div>
+      <div class="tl-item"><div class="tl-time">9 AM</div><div><h3>Check in and gear up</h3><p>Meet your team lead, pick up your vest or materials, and get a quick walkthrough of your role.</p></div></div>
+      <div class="tl-item"><div class="tl-time">11 AM</div><div><h3>Parade steps off</h3><p>Bands, floats, balloons, and veterans head down the route while thousands cheer them on. You're part of it.</p></div></div>
+      <div class="tl-item"><div class="tl-time">2 PM</div><div><h3>Wrap up</h3><p>Help close out, then head home knowing you helped Phoenix say thank you to its veterans.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITTEES -->
+<section class="comm" id="committees">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="color:#ff6b5e">Year-Round Opportunities</span>
+      <h2>Want to Do More? Join a Planning Committee</h2>
+      <p class="lead">Help plan the events that honor veterans all year. Use the skills you have or learn new ones.</p>
+    </div>
+    <div class="comm-grid">
+      <div class="cm"><div class="ic">🤝</div><h3>Veterans Forums</h3><p><b>Goal:</b> Create forums that connect veterans and their families.</p><p><b>You'll help:</b> pick locations, recruit speakers, plan food and invitations, and run check-in.</p><a class="btn btn-white" href="#" data-role="committee-forums" data-track="comm_forums">Join This Committee</a></div>
+      <div class="cm"><div class="ic">⚓</div><h3>Pearl Harbor Day</h3><p><b>Goal:</b> Commemorate the heroes of Pearl Harbor every December 7.</p><p><b>You'll help:</b> organize speakers, singers, and wreath-layers, coordinate proclamations, and run setup.</p><a class="btn btn-white" href="#" data-role="committee-pearl" data-track="comm_pearl">Join This Committee</a></div>
+      <div class="cm"><div class="ic">📣</div><h3>PR &amp; Marketing</h3><p><b>Goal:</b> Get the word out before and during the parade.</p><p><b>You'll help:</b> write news releases, pitch media, and create blogs, social posts, and newsletters.</p><a class="btn btn-white" href="#" data-role="pr" data-track="comm_pr">Join This Committee</a></div>
+    </div>
+    <div class="comm-note"><span>🕐 12–15 hours a month</span><span>💻 Most meetings are virtual</span><span>🥪 Scheduled at lunch or after work</span></div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Why It Matters</span>
+      <h2>What Your Morning Means to a Veteran</h2>
+    </div>
+    <div class="quote-hero">
+      <img src="https://honoringamericasveterans.org/wp-content/uploads/2024/07/Peter-Haas.webp" alt="Pete Haas, Korean War veteran" loading="lazy">
+      <div>
+        <blockquote>"When I came back from the Korean War, people turned their backs on me and called me horrible names. I carried that pain with me for nearly 40 years, but thanks to the parade, that demon is gone."</blockquote>
+        <cite><b>Pete Haas</b> · Korean War Veteran, Purple Heart Recipient</cite>
+      </div>
+    </div>
+    <div class="vid-grid">
+      <div><div class="yt" data-id="fImK1pOecJM" data-title="Last year's parade"><img src="https://i.ytimg.com/vi/fImK1pOecJM/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play last year's parade video"></button></div><p class="yt-cap">Last Year's Parade</p></div>
+      <div><div class="yt" data-id="QWiyDFK0NBA" data-title="Veteran experience 1"><img src="https://i.ytimg.com/vi/QWiyDFK0NBA/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play veteran story"></button></div><p class="yt-cap">A Veteran's Story</p></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>30</b><span>Years of Parades</span></div>
+      <div class="stat"><b>45K+</b><span>Spectators Each Year</span></div>
+      <div class="stat"><b>2 Mi</b><span>Parade Route</span></div>
+      <div class="stat"><b>100%</b><span>Volunteer Powered</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GROUPS -->
+<section class="groups">
+  <div class="wrap g-grid">
+    <div>
+      <span class="eyebrow">Bring Your Team</span>
+      <h2 style="font-size:clamp(28px,3.6vw,40px)">Volunteer Together</h2>
+      <p style="color:var(--gray);font-size:16.5px">Some of our best volunteer crews are families, companies, churches, and scout troops. Roles like Balloon Handlers, Banner Carriers, and Parade March need groups, so you'll stay together all morning.</p>
+      <ul class="g-list">
+        <li><span>✓</span>Companies: a team-building day your veterans on staff will remember</li>
+        <li><span>✓</span>Scouts: sign up your unit to hand out programs and flags</li>
+        <li><span>✓</span>Families and friends: pairs needed for every parade banner</li>
+      </ul>
+      <a class="btn btn-red" href="#" data-role="group" data-track="group_signup">Sign Up a Group</a>
+    </div>
+    <div><div class="yt" data-id="2wg_5BgC9Lo" data-title="Most popular video"><img src="https://i.ytimg.com/vi/2wg_5BgC9Lo/hqdefault.jpg" alt="" loading="lazy"><button class="play" aria-label="Play our most-watched video"></button></div><p class="yt-cap">Our Most-Watched Moment</p></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Questions</span><h2>Before You Sign Up</h2></div>
+    <div class="faq-list">
+      <div class="faq"><button>Do I need any experience?</button><div class="a">No. Every role comes with a quick walkthrough on parade morning, and team leads are on hand all day. Just pick something that matches how active you want to be.</div></div>
+      <div class="faq"><button>What happens after I sign up?</button><div class="a">The parade committee reaches out with your assignment, where and when to report, and what to bring. If you have questions before then, call (480) 368-8714.</div></div>
+      <div class="faq"><button>How physically demanding is it?</button><div class="a">It depends on the role. Balloon Handlers, Parade March, Banner Carriers, and Sponsor Breakfast setup involve walking the 2-mile route or lifting and standing for long stretches. Number Carriers, Staging/Check-in, and Float Building are lighter options. Each role card is tagged so you can choose.</div></div>
+      <div class="faq"><button>Can I volunteer with my family, company, or scout troop?</button><div class="a">Yes, and we love it. Several roles need pairs or teams, and Scouts handle program and flag distribution with their units. Use the "Sign Up a Group" button and tell us how many are coming.</div></div>
+      <div class="faq"><button>Can I help if I'm not free on November 11?</button><div class="a">Absolutely. Help build our 30th anniversary float before the parade, or join a year-round planning committee for Veterans Forums, Pearl Harbor Day, or PR and Marketing. Most meetings are virtual, at lunch or after work.</div></div>
+      <div class="faq"><button>Who runs the parade?</button><div class="a">The Phoenix Veterans Day Parade is managed and presented by Honoring America's Veterans, Inc., an Arizona nonprofit that has honored veterans since 1997.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>They Served. Now It's Our Turn.</h2>
+    <p class="lead">Give one morning this Veterans Day and help Phoenix say thank you to the men and women who served.</p>
+    <div class="final-actions">
+      <a class="btn btn-red" href="#roles" data-track="final_roles">Pick My Volunteer Role</a>
+      <a class="btn btn-white" href="#committees" data-track="final_committees">Join a Committee</a>
+    </div>
+    <small>Can't make it this year? <a href="https://honoringamericasveterans.org/donation/" data-track="final_donate">Support the parade with a donation →</a></small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="fl" src="https://honoringamericasveterans.org/wp-content/uploads/2019/04/honoring-americas-veterans-logo-footer.png" alt="Honoring America's Veterans">
+    <div><b style="color:#fff">Honoring America's Veterans, Inc.</b> · We Salute You!</div>
+    <div>6501 East Greenway Parkway, #103-235, Scottsdale, AZ 85254</div>
+    <div><a href="tel:+14803688714">(480) 368-8714</a> · <a href="mailto:paula.pedene@honoringamericasveterans.org">paula.pedene@honoringamericasveterans.org</a></div>
+    <div class="social">
+      <a href="https://www.facebook.com/HonoringAmericasVeterans/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/c/HonoringAmericasVeterans" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.instagram.com/honoringamericasveterans/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/honoring-arizonas-veterans/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>Your privacy is our policy. We value your privacy and will keep your information secure.</div>
+    <div>© 2026 Honoring America's Veterans · <a href="https://honoringamericasveterans.org/privacy-policy/">Privacy</a></div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="m1" href="#roles" data-track="mbar_roles">🙋 Pick a Role</a>
+  <a class="m2" href="tel:+14803688714" data-track="mbar_call">📞 Call Us</a>
+</div>
+
+<script>
+(function(){
+  /* ============================================================
+     EDIT HERE: paste each role's real sign-up link.
+     Until a link is added, buttons fall back to DEFAULT_URL.
+     ============================================================ */
+  var DEFAULT_URL = 'https://honoringamericasveterans.org/volunteer/';
+  var SIGNUP = {
+    'balloon':        '',
+    'float':          '',
+    'number':         '',
+    'march':          '',
+    'scouts':         '',
+    'banner':         '',
+    'logistics':      '',
+    'breakfast':      '',
+    'pr':             '',
+    'staging':        '',
+    'committee-forums':'',
+    'committee-pearl':'',
+    'group':          ''
+  };
+  function urlFor(key){return SIGNUP[key]||DEFAULT_URL;}
+
+  /* Roles: edit spots, copy, or tags here. Tags: light, active, creative, group */
+  var ROLES = [
+    {key:'balloon',  ic:'🎈',name:'Balloon Handlers',   spots:'40 needed',   tags:['active','group'],  quick:true, desc:'Handle the giant helium balloons and guide them safely down the 2-mile route. A crowd favorite.'},
+    {key:'march',    ic:'🥁',name:'Parade March',       spots:'50–60 needed',tags:['active','group'],  quick:true, desc:'Walk with the parade units to keep a steady pace and help with any issues along the route, from pacing to a stalled vehicle.'},
+    {key:'banner',   ic:'🏳️',name:'Banner Carriers',    spots:'14–16 needed',tags:['active','group'],  quick:true, desc:'Carry a banner in pairs for the Grand Marshals, essay winners, the Mayor, the Governor, and other honorees.'},
+    {key:'staging',  ic:'📋',name:'Staging & Check-in', spots:'12 needed',   tags:['light'],           quick:true, desc:'Greet parade entries, direct them to their staging area, and keep the line moving as they enter the route.'},
+    {key:'float',    ic:'🌸',name:'30th Anniversary Float Build',spots:'Open',tags:['creative','group','light'],quick:false,desc:'Help bring our 30th anniversary float to life: petal paper, twists, glittered letters, streamers, and more. Happens before parade day.'},
+    {key:'number',   ic:'🔢',name:'Number Carriers',    spots:'10 needed',   tags:['light'],           quick:false,desc:'Carry the entry number flags so spectators can follow along in the parade program.'},
+    {key:'scouts',   ic:'⚜️',name:'Scouts: Programs & Flags',spots:'Units welcome',tags:['group','light'],quick:false,desc:'Scout units hand out parade programs and flags to spectators. Sign up your whole unit.'},
+    {key:'logistics',ic:'📦',name:'Logistics',          spots:'10 needed',   tags:['active'],          quick:false,desc:'Deliver water and programs, set up trash cans, check out radios, golf carts and vests, and help set up tents and tables.'},
+    {key:'breakfast',ic:'☕',name:'Sponsor Breakfast',  spots:'12 needed',   tags:['active'],          quick:false,desc:'Set up and run the VIP area for sponsors and dignitaries: tents, chairs, tables, decor, and working with catering. Hands-on and physical.'},
+    {key:'pr',       ic:'📣',name:'PR & Marketing',     spots:'5 needed',    tags:['creative','light'],quick:false,desc:'Year-round: write news releases, pitch media, and create blogs, social posts, and newsletters before and on parade day.'}
+  ];
+  var LABEL={light:'Easygoing',active:'Active',creative:'Creative',group:'Great for groups'};
+
+  window.dataLayer=window.dataLayer||[];
+  function track(label,extra){var o={event:'hav_lp_click',click_label:label,page:'volunteer_lp'};if(extra)for(var k in extra)o[k]=extra[k];window.dataLayer.push(o);}
+
+  /* Render role cards */
+  var grid=document.getElementById('roleGrid');
+  grid.innerHTML=ROLES.map(function(r){
+    return '<div class="role" data-tags="'+r.tags.join(' ')+'">'+
+      '<div class="role-top"><div class="ic">'+r.ic+'</div><span class="spots">'+r.spots+'</span></div>'+
+      '<h3>'+r.name+'</h3><p>'+r.desc+'</p>'+
+      '<div class="tags">'+r.tags.map(function(t){return '<span class="tag '+t+'">'+LABEL[t]+'</span>';}).join('')+'</div>'+
+      '<a class="btn btn-red signup" href="'+urlFor(r.key)+'" data-role="'+r.key+'">Sign Up</a></div>';
+  }).join('');
+
+  /* Render hero quick picks */
+  document.getElementById('quickList').innerHTML=ROLES.filter(function(r){return r.quick;}).map(function(r){
+    return '<li><a class="qrole signup" href="'+urlFor(r.key)+'" data-role="'+r.key+'"><span class="l"><span class="ic">'+r.ic+'</span><span><b>'+r.name+'</b><small>'+r.spots+' · '+LABEL[r.tags[0]]+'</small></span></span><span class="go">Sign Up →</span></a></li>';
+  }).join('');
+
+  /* Point committee and group buttons at their links */
+  document.querySelectorAll('a[data-role]:not(.signup)').forEach(function(a){a.href=urlFor(a.dataset.role);a.classList.add('signup');});
+
+  /* Sign-up click tracking (use volunteer_signup_click as the conversion in GTM) */
+  document.querySelectorAll('.signup').forEach(function(a){a.addEventListener('click',function(){
+    window.dataLayer.push({event:'volunteer_signup_click',volunteer_role:a.dataset.role,page:'volunteer_lp'});
+  });});
+  document.querySelectorAll('a[data-track]').forEach(function(a){a.addEventListener('click',function(){track(a.dataset.track);});});
+
+  /* Filters */
+  document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.fbtn').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active');var f=b.dataset.filter;
+    document.querySelectorAll('.role').forEach(function(card){
+      card.classList.toggle('hidden',f!=='all'&&card.dataset.tags.split(' ').indexOf(f)===-1);
+    });
+    track('filter_'+f);
+  });});
+
+  /* YouTube facades */
+  document.querySelectorAll('.yt').forEach(function(el){el.addEventListener('click',function(){
+    if(el.querySelector('iframe')) return;
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.id+'?autoplay=1&rel=0';
+    f.title=el.dataset.title;f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;
+    el.innerHTML='';el.appendChild(f);
+    window.dataLayer.push({event:'video_play',video_title:el.dataset.title,page:'volunteer_lp'});
+  });});
+
+  /* FAQ */
+  document.querySelectorAll('.faq button').forEach(function(btn){btn.addEventListener('click',function(){
+    var f=btn.parentElement,open=f.classList.contains('open');
+    document.querySelectorAll('.faq.open').forEach(function(x){x.classList.remove('open');});
+    if(!open) f.classList.add('open');
+  });});
+
+  /* Countdown to Nov 11, 2026, 9:00 a.m. Arizona time (UTC-7). Hides itself after. */
+  var target=new Date('2026-11-11T16:00:00Z').getTime();
+  function tick(){
+    var d=target-Date.now();
+    if(d<=0){document.getElementById('countdown').style.display='none';return;}
+    document.getElementById('cdD').textContent=Math.floor(d/864e5);
+    document.getElementById('cdH').textContent=Math.floor(d%864e5/36e5);
+    document.getElementById('cdM').textContent=Math.floor(d%36e5/6e4);
+  }
+  tick();setInterval(tick,30000);
+
+  /* Hide mobile bar while hero picker or roles grid is on screen */
+  var bar=document.getElementById('mbar');
+  if('IntersectionObserver' in window){
+    var vis={};
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.id]=e.isIntersecting;});bar.classList.toggle('hide',vis.quick||vis.roles);},{threshold:.15});
+    io.observe(document.getElementById('quick'));io.observe(document.getElementById('roles'));
+  }
+})();
+</script>
+</body>
+</html>
