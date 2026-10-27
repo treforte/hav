@@ -183,7 +183,9 @@ table.cmp{width:100%;min-width:680px;border-collapse:collapse;font-size:14px}
 /* OTHER EVENTS */
 .ev-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
 .ev{background:var(--off);border-radius:18px;padding:28px 24px;display:flex;flex-direction:column}
-.ev .ic{font-size:32px;margin-bottom:10px}
+.ev .ic{font-size:32px;margin-bottom:10px;min-height:38px;display:flex;align-items:center}
+.ic .flag{width:46px;height:auto;border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.18);display:block}
+
 .ev .when{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
 .ev h3{font-size:21px;color:var(--navy);text-transform:uppercase;font-weight:900;margin:6px 0 10px}
 .ev p{color:var(--gray);font-size:15px;margin-bottom:16px}
@@ -345,7 +347,7 @@ footer a{color:rgba(255,255,255,.8)}
 <!-- COUNTDOWN -->
 <div class="cd" id="countdown">
   <div class="wrap">
-    <div class="cd-text"><strong>The 30th HAV Phoenix Veterans Day Parade</strong><span>Wednesday, November 11 · Central Phoenix · Parade entries are limited and fill in order</span></div>
+    <div class="cd-text"><strong>The 30th HAV Phoenix Veterans Day Parade</strong><span>Wednesday, Nov. 11 · Central Phoenix · Parade entries are limited and fill in order</span></div>
     <div class="cd-clock" aria-label="Countdown to the parade">
       <div class="cd-unit"><b id="cdD">--</b><small>Days</small></div>
       <div class="cd-unit"><b id="cdH">--</b><small>Hours</small></div>
@@ -555,7 +557,7 @@ footer a{color:rgba(255,255,255,.8)}
     </div>
     <div class="ev-grid">
       <div class="ev">
-        <div class="ic">⚓</div><span class="when">December 7 · Wesley Bolin Plaza</span>
+        <div class="ic">⚓</div><span class="when">Each December · Wesley Bolin Plaza</span>
         <h3>Pearl Harbor Day</h3>
         <p>An outdoor, military-themed commemoration with wreath presentations honoring the anniversary of Pearl Harbor.</p>
         <table><tr><td>Commendation</td><td>$2,500</td></tr><tr><td>Legion of Merit</td><td>$5,000</td></tr><tr><td>Distinguished Service Cross <small>(limited to one)</small></td><td>$7,500</td></tr></table>
@@ -569,7 +571,7 @@ footer a{color:rgba(255,255,255,.8)}
         <a class="btn btn-ghost" href="https://honoringamericasveterans.org/veterans-forum-sponsorship/" data-track="ev_forum">Sponsor a Forum</a>
       </div>
       <div class="ev">
-        <div class="ic">🇺🇸</div><span class="when">Year-Round</span>
+        <div class="ic"><svg class="flag" viewBox="0 0 38 20" role="img" aria-label="American flag" xmlns="http://www.w3.org/2000/svg"><rect width="38" height="20" fill="#fff"/><rect y="0.000" width="38" height="1.538" fill="#B22234"/><rect y="3.077" width="38" height="1.538" fill="#B22234"/><rect y="6.154" width="38" height="1.538" fill="#B22234"/><rect y="9.231" width="38" height="1.538" fill="#B22234"/><rect y="12.308" width="38" height="1.538" fill="#B22234"/><rect y="15.385" width="38" height="1.538" fill="#B22234"/><rect y="18.462" width="38" height="1.538" fill="#B22234"/><rect width="15.2" height="10.77" fill="#3C3B6E"/><circle cx="1.60" cy="1.20" r=".45" fill="#fff"/><circle cx="4.00" cy="1.20" r=".45" fill="#fff"/><circle cx="6.40" cy="1.20" r=".45" fill="#fff"/><circle cx="8.80" cy="1.20" r=".45" fill="#fff"/><circle cx="11.20" cy="1.20" r=".45" fill="#fff"/><circle cx="13.60" cy="1.20" r=".45" fill="#fff"/><circle cx="2.80" cy="2.90" r=".45" fill="#fff"/><circle cx="5.20" cy="2.90" r=".45" fill="#fff"/><circle cx="7.60" cy="2.90" r=".45" fill="#fff"/><circle cx="10.00" cy="2.90" r=".45" fill="#fff"/><circle cx="12.40" cy="2.90" r=".45" fill="#fff"/><circle cx="1.60" cy="4.60" r=".45" fill="#fff"/><circle cx="4.00" cy="4.60" r=".45" fill="#fff"/><circle cx="6.40" cy="4.60" r=".45" fill="#fff"/><circle cx="8.80" cy="4.60" r=".45" fill="#fff"/><circle cx="11.20" cy="4.60" r=".45" fill="#fff"/><circle cx="13.60" cy="4.60" r=".45" fill="#fff"/><circle cx="2.80" cy="6.30" r=".45" fill="#fff"/><circle cx="5.20" cy="6.30" r=".45" fill="#fff"/><circle cx="7.60" cy="6.30" r=".45" fill="#fff"/><circle cx="10.00" cy="6.30" r=".45" fill="#fff"/><circle cx="12.40" cy="6.30" r=".45" fill="#fff"/><circle cx="1.60" cy="8.00" r=".45" fill="#fff"/><circle cx="4.00" cy="8.00" r=".45" fill="#fff"/><circle cx="6.40" cy="8.00" r=".45" fill="#fff"/><circle cx="8.80" cy="8.00" r=".45" fill="#fff"/><circle cx="11.20" cy="8.00" r=".45" fill="#fff"/><circle cx="13.60" cy="8.00" r=".45" fill="#fff"/><circle cx="2.80" cy="9.70" r=".45" fill="#fff"/><circle cx="5.20" cy="9.70" r=".45" fill="#fff"/><circle cx="7.60" cy="9.70" r=".45" fill="#fff"/><circle cx="10.00" cy="9.70" r=".45" fill="#fff"/><circle cx="12.40" cy="9.70" r=".45" fill="#fff"/></svg></div><span class="when">Year-Round</span>
         <h3>Tattered Flag Project</h3>
         <p>Help HAV honor the flag and the veterans who served under it through our Tattered Flag program and event.</p>
         <ul><li>Packages and benefits available on request</li><li>Pairs well with a parade sponsorship</li></ul>
